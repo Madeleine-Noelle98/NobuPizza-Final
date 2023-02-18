@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<NobuPizza.Models.Product>
 <style>
 
 body {
@@ -196,6 +196,21 @@ a:hover {
 			</div>
 		</div>
 		<div class="row">
+			@foreach (var item in Model){
+
+				<div class="col-md-5">
+					<h2>@item.Name</h2>
+					<img src="./img/photo-1593560708920-61dd98c46a4e.avif" width="150"/>
+					<div>
+						@item.Description
+					</div>
+					<div style="font-weight:bold">
+						@item.Cost
+					</div>
+					<button class="add-to-cart">Add to Cart</button>
+				</div>
+
+			}
 			<!-- Single Product -->
 			<div class="col-md-6 col-lg-4 col-xl-3">
 				<div id="product-1" class="single-product">

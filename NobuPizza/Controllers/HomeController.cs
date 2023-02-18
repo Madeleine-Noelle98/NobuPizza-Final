@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using NobuPizza.Data;
 using NobuPizza.Models;
 using System.Diagnostics;
 
@@ -7,10 +9,12 @@ namespace NobuPizza.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController>_logger;
+		private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+		public HomeController(ILogger<HomeController> logger,ApplicationDbContext context)
         {
             _logger = logger;
+            _context= context;
         }
 
         public IActionResult Index()
@@ -21,7 +25,8 @@ namespace NobuPizza.Controllers
 
         public IActionResult Product()
         {
-            return View();
+            try {  return  View( _context.Product.ToList());} 
+            catch { return View(); }
         }
         public IActionResult Wishlist()
         {

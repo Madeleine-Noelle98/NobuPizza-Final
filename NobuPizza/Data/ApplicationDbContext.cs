@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using NobuPizza.Models;
 
 namespace NobuPizza.Data
 {
@@ -9,5 +10,6 @@ namespace NobuPizza.Data
             : base(options)
         {
         }
+        public DbSet<NobuPizza.Models.Product> Product { get; set; }
     }
 }

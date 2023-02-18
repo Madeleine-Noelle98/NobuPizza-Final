@@ -4,8 +4,8 @@ using NobuPizza.Data;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<NobuPizzaContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("NobuPizzaContext") ?? throw new InvalidOperationException("Connection string 'NobuPizzaContext' not found.")));
+//builder.Services.AddDbContext<NobuPizzaContext>(options =>
+ //   options.UseSqlServer(builder.Configuration.GetConnectionString("NobuPizzaContext") ?? throw new InvalidOperationException("Connection string 'NobuPizzaContext' not found.")));
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

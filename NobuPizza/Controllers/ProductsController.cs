@@ -12,9 +12,9 @@ namespace NobuPizza.Controllers
 {
     public class ProductsController : Controller
     {
-        private readonly NobuPizzaContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public ProductsController(NobuPizzaContext context)
+        public ProductsController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -141,7 +141,7 @@ namespace NobuPizza.Controllers
         {
             if (_context.Product == null)
             {
-                return Problem("Entity set 'NobuPizzaContext.Product'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.Product'  is null.");
             }
             var product = await _context.Product.FindAsync(id);
             if (product != null)
