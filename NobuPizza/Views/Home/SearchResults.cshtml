@@ -1,0 +1,11 @@
+﻿@model RapidProduct
+
+<h1>Search Results</h1>
+<main>
+    <form action="/Home/Search1" method="get">
+        <input type="text" name="query" id="query" placeholder="Search recipes...">
+        <button type="submit">Search</button>
+    </form>
+</main>
+<h3>@Model?.name</h3>
+
