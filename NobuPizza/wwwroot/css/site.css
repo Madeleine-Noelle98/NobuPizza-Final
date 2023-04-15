@@ -1,80 +1,19 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
 
 header {
     font-family: 'Italiana';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 70px;
     color: #000000;
     padding: 20px;
+    margin: 10px;
+    background-color:red;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-main {
-    width: 120% auto;
-}
 
-.main-page {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.35)), url("https://images.alphacoders.com/991/991307.jpg");
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-    .main-page h2 {
-        font-size: 44px;
-        color: whitesmoke;
-        margin-bottom: 15px;
-        letter-spacing: 5px;
-    }
 
-    .main-page p {
-        font-size: 17px;
-        color: whitesmoke;
-        word-spacing: 7px;
-    }
 
-    .main-page button {
-        background-color: whitesmoke;
-        color: black;
-        padding: 10px 30px;
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        font-weight: 500;
-        margin: 10px;
-        background: wheat;
-    }
 
-        .main-page button:hover {
-            box-shadow: 0 5px 10px rgb(238, 227, 163);
-            transition-duration: 0.3s;
-            cursor: pointer;
-        }
 

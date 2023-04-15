@@ -179,15 +179,22 @@
 		display: inline-block;
 		color: #fff;
 	}
+	.btn-achita{
+		background-color: black;
+		font-size: 20px;
+		text-align: center;
+		padding: 4px 15px;
+		float: right;
+		justify-content:right;
+		color: #fff;
+	}
 
 	.trash-icon {
 		font-size: 20px;
 		color: #212529;
 	}
 </style>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 
 
@@ -237,27 +244,19 @@
 								<td width="10%" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
 								</tr>
 						</tbody>
-						<label class="total">Total: 30$</label>
+
+						<thead>
+							<tr>
+								<td width="15%"><span class="btn-achita">Achita</span></td>
+							</tr>
+						</thead>
+					
+						
 					</table>
 					
-					<h3>Alegeti metoda de plata:</h3>
-					<input type="checkbox" id="buy1" value="Card">
-					<label for="metoda1">Card</label>
-					<br>
-					<input type="checkbox" id="buy2" value="Cash">
-					<label for="metoda2"> Cash</label>
-					<br>
-					<input type="checkbox" id="buy3" value="Curier">
-					<label for="metoda3"> Plata curierului</label>
-					<br>
-					<button>Confirma</button>
+					
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<footer class="border-top footer text-muted">
-	<div class="container">
-		&copy; 2023 - Nobu - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-	</div>
-</footer>

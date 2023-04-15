@@ -1,11 +1,241 @@
 ﻿@model RapidProduct
 
-<h1>Search Results</h1>
+@*<h1>Search Results</h1>
 <main>
     <form action="/Home/Search1" method="get">
         <input type="text" name="query" id="query" placeholder="Search recipes...">
         <button type="submit">Search</button>
     </form>
-</main>
-<h3>@Model?.name</h3>
+</main>*@
 
+<main class="container-c">
+	<section class="animation">
+		<div class="first"><div>-To live a full life</div>
+		</div>
+		<div class="second"><div>you have to</div></div>
+		<div class="third"><div>fill your stomach first.-</div></div>
+	</section>
+</main>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<div class="card-container">
+<div class='recipe-card'>
+        <div style="background:url(https://avatars.mds.yandex.net/i?id=c2892ad5e076a09406c65db1ad878c59fbbaa590-7663592-images-thumbs&n=13) no-repeat 50% 50%; background-size:cover; height: 150px"></div>
+    <div class="recipe-card__body">
+        <h1 class="recipe-card__heading">Pizza Margherita</h1>
+        <h2 class="recipe-card__subhead">Crunchy around the edges, softer in the center, this pizza is just magnificent. </h2>
+
+        <ul class="recipe-card__nav">
+            <li>
+                <h3 class="active">Ingredients</h3>
+            </li>
+            <li>
+                <h3>Method</h3>
+            </li>
+        </ul>
+
+
+
+        <ul class="recipe-card__ingredients">
+                <li>&frac14; 350 g 00 type flour</li>
+                <li>&frac14; 12 g brewer’s yeast powder</li>
+                <li>&frac12;175 ml water</li>
+                <li>&frac14; salt</li>
+
+
+                <li>300 g Mutti tomato polpa</li>
+                <li>3 mozzarella balls</li>
+                <li>4 tablespoons extra virgin olive oi</li>
+                <li>&frac12;fresh basil</li>
+                <li>&frac34; salt</li>
+           
+       
+        </ul>
+    </div>
+
+</div>
+<div class='recipe-card'>
+        <div style="background:url(https://avatars.mds.yandex.net/i?id=fe503caa06d44a74e0e4b4c0af822c8c91763e26-8075965-images-thumbs&n=13) no-repeat 50% 50%; background-size:cover; height: 150px"></div>
+    <div class="recipe-card__body">
+        <h1 class="recipe-card__heading">Pizza Napoletana</h1>
+            <h2 class="recipe-card__subhead">The dough, which should be at room temperature, needs to be handled with hands only. First, the ball of dough needs to be placed on a lightly floured working surface. </h2>
+
+        <ul class="recipe-card__nav">
+            <li>
+                <h3 class="active">Ingredients</h3>
+            </li>
+            <li>
+                <h3>Method</h3>
+            </li>
+        </ul>
+
+
+
+        <ul class="recipe-card__ingredients">
+                <li>&frac14; 1 L (4 1/4 cups) water</li>
+                <li>&frac14; 3g (1/2 tsp) fresh yeast</li>
+                <li>&frac12; 1,6 –1,8 kg (13 1/3 - 15 cups) flour, 00 type (or, all-purpose)</li>
+                <li>&frac14; 60 – 80g (2.1 - 2.8 oz) canned, peeled tomatoes</li>
+                <li>6 – 7g (1 1/2 tsp) virgin or extra virgin olive oil</li>
+                <li>1 &frac14; 80 – 100g (2.8 - 3.5 oz) mozzarella/fior di latte</li>
+                <li>&#8539; a few fresh basil leaves</li>
+            <li>1/2 teaspoon salt</li>
+                <li>5 – 7g (1 1/2 tsp) hard cheese (grated), optional</li>
+        </ul>
+    </div>
+
+</div>
+</div>
+
+
+	<style>
+.card-container{
+        display: flex;
+        align-items:center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right:70px;
+}
+body {
+  background: #fff;
+  font: 13px 'Open Sans', sans-serif;
+  color: #222;
+}
+.recipe-card {
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+  box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+  border:1px solid #f0f1f3;
+  margin-bottom: 1rem;
+
+}
+.recipe-card__body {    
+    padding: 70px;
+    width: 600px;
+}
+.recipe-card__heading {
+  padding: 0;
+  margin: 0 0 0;
+  color: #444;
+}
+.recipe-card__subhead {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.recipe-card__ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  column-count: 1;
+  li {
+    margin-bottom: 5px;
+  }
+  li:before {
+    content: '\2022';
+    color: #eb9376;
+    margin-right: 5px;
+  }
+}
+
+.recipe-card__nav {
+  margin: 0 0 20px;
+  padding: 0;
+  border-bottom: 1px solid #eb9376;
+  li {
+    display: inline-block;
+    margin-right: 30px
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  h3:after {
+    content: '';
+    display: block;
+    width: 0%;
+    padding-top: 10px;
+    margin: 0 auto;
+    border-bottom: 5px solid #eb9376;
+    transition: width 250ms ease-in-out 0s;
+  }
+  h3:hover {
+    cursor: pointer;
+  }
+  h3:hover:after, h3.active:after {
+   width: 100%; 
+  }
+}
+
+@@media (min-width:599px) {
+  .recipe-card {
+    width: 600px
+  }
+  .recipe-card__ingredients {
+    column-count: 2
+  }
+}
+
+.container-c {
+  color: rosybrown;
+  font-size: 20px;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+
+
+.animation {
+  height:60px;
+  overflow:hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:3.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+			align-items: center;
+			justify-content: center;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+			align-items: center;
+			justify-content: center;
+}
+
+.first div {
+  background-color:white;
+		align-items: center;
+		justify-content: center;
+}
+.second div {
+  background-color:white;
+		align-items: center;
+		justify-content: center;
+}
+.third div {
+  background-color:white;
+		align-items: center;
+		justify-content: center;
+}
+
+@@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+	</style>

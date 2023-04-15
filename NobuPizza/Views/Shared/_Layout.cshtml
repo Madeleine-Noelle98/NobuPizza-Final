@@ -8,7 +8,9 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     
@@ -17,21 +19,59 @@
         font-family: 'Italiana';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        color: #000000;
+        font-size: 25px;
+      
         padding: 20px;
 
     }
-
-    footer{
-        margin-top: auto;
+    #logo{
+width:40px;
+height:40px;
     }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa {
+        padding: 5px;
+        font-size: 20px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    footer {
+  
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color:rosybrown;
+    }
+    a{
+        color: rosybrown;
+    }
+    li{
+		text-decoration: none;
+        list-style: none;
+        
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0 auto;
+    }
+   
 </style>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"style="background-color:black">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Nobu</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img id="logo" src="https://static.wixstatic.com/media/c6c464_15bfb7968dbc4d0a9d3d411c80146673~mv2.png" width="5px" height="5px" alt="Your Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -64,11 +104,19 @@
             @RenderBody()
         </main>
     </div>
-   
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+ 
 </body>
-
+<footer class="border-top footer">
+    <ul>
+        <li><a href="https://www.facebook.com/">Facebook<i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/">Twitter<i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/">Instagram<i class="fa fa-instagram"></i></a></li>
+		<li><a href="https://www.linkedin.com/">Linkedin<i class="fa fa-linkedin"></i></a></li>
+        &copy; 2023 - Nobu -
+    </ul>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
 </html>

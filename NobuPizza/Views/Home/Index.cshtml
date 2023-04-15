@@ -11,65 +11,161 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
 
+	<img src="https://www.halfbakedharvest.com/wp-content/uploads/2022/08/Caramelized-Shallot-and-Bacon-Goat-Cheese-Pizza-1.jpg">
+
+
+    <div class="right-div">
+        <h1 class="title">Nobu Pizza</h1>
+		<p class="paragraphs">Nobu is a pizza restaurant that offers a unique dining experience with its fusion of Japanese and Italian cuisines. The restaurant boasts a modern and sleek interior, with a menu that features a variety of gourmet pizzas, from classic margherita to more innovative options like miso eggplant and tuna sashimi. Each pizza is made with high-quality, fresh ingredients, and is carefully crafted to provide a perfect balance of flavors and textures. In addition to its delicious pizzas, Nobu also offers a range of salads, appetizers, and desserts, as well as an extensive wine list and a selection of signature cocktails.</p>
+
+        
+    </div>
+
+    <section id="clients" class="section-bg">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h3 style="padding-top:10px">Our Clients</h3>
+            </div>
+
+            <div class="row no-gutters clients-wrap clearfix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+ 
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="https://www.halfbakedharvest.com/wp-content/themes/half-baked-harvest-2020/assets/images/third-party-logos/good-morning-america.png" width="214" height="115" alt="Good Morning America" class="nopin entered lazyloaded" data-no-pin="true" data-lazy-src="https://www.halfbakedharvest.com/wp-content/themes/half-baked-harvest-2020/assets/images/third-party-logos/good-morning-america.png" data-pin-nopin="true" data-ll-status="loaded">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="https://www.halfbakedharvest.com/wp-content/themes/half-baked-harvest-2020/assets/images/third-party-logos/people.png" width="223" height="91" alt="People" class="nopin entered lazyloaded" data-no-pin="true" data-lazy-src="https://www.halfbakedharvest.com/wp-content/themes/half-baked-harvest-2020/assets/images/third-party-logos/people.png" data-pin-nopin="true" data-ll-status="loaded">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+
+                        <img src="https://www.halfbakedharvest.com/wp-content/themes/half-baked-harvest-2020/assets/images/third-party-logos/glamour.png" width="313" height="55" alt="Glamour" class="nopin entered lazyloaded" data-no-pin="true" data-lazy-src="https://www.halfbakedharvest.com/wp-content/themes/half-baked-harvest-2020/assets/images/third-party-logos/glamour.png" data-pin-nopin="true" data-ll-status="loaded">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                <img src="https://www.halfbakedharvest.com/wp-content/themes/half-baked-harvest-2020/assets/images/third-party-logos/bon-appetit.png" width="252" height="54" alt="Bon Appetit" class="nopin entered lazyloaded" data-no-pin="true" data-lazy-src="https://www.halfbakedharvest.com/wp-content/themes/half-baked-harvest-2020/assets/images/third-party-logos/bon-appetit.png" data-pin-nopin="true" data-ll-status="loaded">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 </body>
 </html>
 
 
 <style>
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body{
- background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.35)), url("https://images.alphacoders.com/991/991307.jpg");
- height: 100%;
- background-size: cover;
 
-}
-footer{
+
+	body {
+		display: flex;
+		flex-direction: column;
+		height: 100vh; 
+		margin: 0;
+		
+	}
+
+    img {
+        background-size: cover;
+        background-position: left;
+        height: 100vh;
+        width: 40%;
+        float: left;
+    }
+
+    .right-div {
+        background-color: rosybrown;
+        color: white;
+        height: 100vh;
+        width: 60%;
+        float: right;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+
+
+		.title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.paragraphs {
+			font-size: 1.2em;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		text-align: justify;
+		}
+
+		
+
+    .section-header h3 {
+    
+        font-size: 36px;
+        color: rosybrown;
+        text-align: center;
+        font-weight: 500;
+        position: relative;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+    #clients {
+        padding: 30px 0;
+        border: none;
+       
+    }
+
+        #clients .clients-wrap {
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        #clients .client-logo {
+            padding: 70px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #fff;
+            height: 100px;
+            border: none;
+        }
+
+        #clients img {
+            transition: all 0.4s ease-in-out;
+            width: 150px;
+            height: 50px;
+            
+        }
+
+
+    footer{
         margin-top: auto;
 }
 
-main {
-  width: 120% auto;
-}
-.main-page {
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-page h2 {
-  font-size: 44px;
-  color: whitesmoke;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-}
-.main-page p {
-  font-size: 17px;
-  color: whitesmoke;
-  word-spacing: 7px;
-}
-.main-page button {
-  background-color: whitesmoke;
-  color: black;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 10px;
-  background: wheat;
-}
-.main-page button:hover {
-  box-shadow: 0 5px 10px rgb(238, 227, 163);
-  transition-duration: 0.3s;
-  cursor: pointer;
-}
 
 </style>
